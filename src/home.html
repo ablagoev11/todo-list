@@ -6,6 +6,57 @@
     <title>Todo List</title>
   </head>
   <body>
-    Webpack Boilerplate
+    <div class="container">
+      <div class="sidebar">
+        <div class="profile">
+          <img
+            class="icon"
+            src="https://www.cinemasight.com/wp-content/uploads/2018/10/Nicolas_Cage-215x300.jpg"
+            alt="G.O.A.T."
+          />
+          <h1>User</h1>
+        </div>
+        <h2>Projects</h2>
+        <div class="projects">
+          <div class="project">
+            <h3>Something</h3>
+            <button></button>
+          </div>
+        </div>
+        <button class="add">Add Project</button>
+        <a href="">Sign Out</a>
+      </div>
+      <div class="body">
+        <button class="add-task">+</button>
+      </div>
+    </div>
+
+    <section class="modal hidden">
+      <div class="flex">
+        <h1>Task</h1>
+        <button class="close-button">X</button>
+      </div>
+      <div class="label-container">
+        <label for="title">Title</label>
+        <input type="text" id="title" />
+      </div>
+      <div class="label-container">
+        <label for="due-date">Due Date</label>
+        <input type="date" id="due-date" />
+      </div>
+      <div class="label-container">
+        <label for="note">Note</label>
+        <textarea id="note"></textarea>
+      </div>
+      <fieldset>
+        <legend>Priority</legend>
+        <label for="not-urgent">Can Wait</label>
+        <input type="radio" name="priority" id="not-urgent" />
+        <label for="urgent">Urgent</label>
+        <input type="radio" name="priority" id="urgent" />
+      </fieldset>
+      <button class="add-todo">Add Todo</button>
+    </section>
+    <div class="overlay hidden"></div>
   </body>
 </html>
