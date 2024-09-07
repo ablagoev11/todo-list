@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="profile">
+          <img
+            class="icon"
+            src="https://www.cinemasight.com/wp-content/uploads/2018/10/Nicolas_Cage-215x300.jpg"
+            alt="G.O.A.T."
+          />
+          <h1>User</h1>
+        </div>
+        <h2>Projects</h2>
+        <div class="projects"></div>
+        <button class="add">Add Project</button>
+        <a href="">Sign Out</a>
+      </div>
+      <div class="body">
+        <button class="add-task">+</button>
+        <div class="tasks-container"></div>
+      </div>
+    </div>
+
+    <section class="modal hidden">
+      <div class="flex">
+        <h1 class="modal-title"></h1>
+        <button class="close-button"></button>
+      </div>
+      <div class="modal-content"></div>
+      <button class="add-modal"></button>
+    </section>
+
+    <div class="overlay hidden"></div>
+  </body>
+</html>
